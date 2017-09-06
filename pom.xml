@@ -3,4 +3,21 @@
   <groupId>com.infogain</groupId>
   <artifactId>HibernateInterviewDemo</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  
+   <dependencies>
+		<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+<dependency>
+    <groupId>org.hibernate</groupId>
+    <artifactId>hibernate-core</artifactId>
+    <version>5.2.10.Final</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/com.oracle/ojdbc14 -->
+<dependency>
+    <groupId>com.oracle</groupId>
+    <artifactId>ojdbc14</artifactId>
+    <version>10.2.0.4.0</version>
+</dependency>
+		</dependencies>
+  
 </project>
