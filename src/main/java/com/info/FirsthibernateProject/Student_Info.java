@@ -5,8 +5,9 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+/*Make this class entry in hibernate config file*/
 @Entity
-@Table(name = "STUDENT_INFORMATION")
+@Table(name = "STUDENT_INFORMATION") //Make sure the db is same
 public class Student_Info {
 
 	@Id

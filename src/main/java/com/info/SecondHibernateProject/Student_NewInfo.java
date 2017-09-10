@@ -12,7 +12,7 @@ import javax.persistence.Transient;
 
 /*Make this class entry in hibernate config file*/
 @Entity
-@Table(name = "STUDENT_INFORMATION2")
+@Table(name = "STUDENT_INFORMATION2")//Make sure the db is same
 public class Student_NewInfo {
 
 	@Id
