@@ -1,9 +1,13 @@
 package com.info.SecondHibernateProject;
 
+import java.util.Date;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 import javax.persistence.Transient;
 
 /*Make this class entry in hibernate config file*/
@@ -21,6 +25,13 @@ public class Student_NewInfo {
 	// If you use Transient Annotation, hibernate will not insert address data
 	// into db
 	private String address;
+
+	//Example of Temporal Datatype
+	@Temporal(TemporalType.DATE)
+	private Date birth;
+	
+	@Temporal(TemporalType.TIMESTAMP)
+	private Date birthTime;
 
 	public Student_NewInfo() {
 
@@ -57,4 +68,22 @@ public class Student_NewInfo {
 		this.address = address;
 	}
 
+	public Date getBirth() {
+		return birth;
+	}
+
+	public void setBirth(Date birth) {
+		this.birth = birth;
+	}
+
+	public Date getBirthTime() {
+		return birthTime;
+	}
+
+	public void setBirthTime(Date birthTime) {
+		this.birthTime = birthTime;
+	}
+
+	
+	
 }
