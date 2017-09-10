@@ -1,3 +1,3 @@
-This package focuses on annotsation namely 
+This package focuses on annotation namely 
 
 @GeneratedValue

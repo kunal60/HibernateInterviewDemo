@@ -49,7 +49,8 @@
 		<mapping class="com.info.FirsthibernateProject.Student_Info" />
 		<mapping class="com.info.SecondHibernateProject.Student_NewInfo" />
 		<mapping class="com.info.ThirdHibernateProject.Student_Info3" />
-
+		<mapping class="com.info.FourthHibernateProject.Student" />
+		<mapping class="com.info.FourthHibernateProject.StudentDetail" />
 
 
 
