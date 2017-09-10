@@ -1,5 +1,6 @@
 package com.info.SecondHibernateProject;
 
+import java.util.Date;
 import java.util.List;
 
 import org.hibernate.Session;
@@ -15,9 +16,13 @@ public class Main {
 		System.out.println("Inserting data into the database");
 		Student_NewInfo student = new Student_NewInfo();
 		student.setName("Rishi");
-		student.setRoll_no(50);// Keep changing this value;otherwise it will
+		student.setRoll_no(60);// Keep changing this value;otherwise it will
 								// throw unique constraint error
 		student.setAddress("Rajouri");
+		Date d = new Date();
+		System.out.println(d);
+		student.setBirth(d);
+		student.setBirthTime(d);
 
 		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
 		Session session = sessionFactory.openSession();
