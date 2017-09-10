@@ -13,7 +13,11 @@ public class Main {
 		System.out.println("Inserting data into the database");
 		Student_Info student = new Student_Info();
 		student.setName("Rishi");
-		student.setRoll_no(9);
+		student.setRoll_no(30);
+		
+		 
+	      
+	      
 		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
 		Session session = sessionFactory.openSession();
 		session.beginTransaction();

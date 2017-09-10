@@ -1,5 +1,6 @@
 package com.info.FirsthibernateProject;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -10,7 +11,8 @@ public class Student_Info {
 
 	@Id
 	private int roll_no;
-
+	
+	@Column(name="full_name")
 	private String name;
 
 	public Student_Info() {
