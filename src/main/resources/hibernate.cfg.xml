@@ -47,6 +47,8 @@
 		<!-- <property name="hbm2ddl.auto">validate</property> -->
 		<!-- Mention here all the model classes along with their package name -->
 		<mapping class="com.info.FirsthibernateProject.Student_Info" />
+		<mapping class="com.info.SecondHibernateProject.Student_NewInfo" />
+
 
 
 	</session-factory>
