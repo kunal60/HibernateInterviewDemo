@@ -27,7 +27,7 @@ public class StudentDetail {
 	@Column(name = "student_mobile_number")
 	private String mobileNumber;
 
-	@OneToOne
+	@OneToOne(cascade=CascadeType.ALL)
 	@JoinColumn(name = "student_id")
 	private Student student;
 

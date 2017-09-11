@@ -1,9 +1,12 @@
 package com.info.FourthHibernateProject;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 /*Make this class entry in hibernate config file*/
@@ -17,6 +20,10 @@ public class Student {
 
 	@Column(name = "student_name")
 	private String name;
+
+	@OneToOne(cascade = CascadeType.ALL)
+	@JoinColumn(name = "student_id")
+	private StudentDetail studentDetail;
 
 	public Student() {
 
@@ -42,6 +49,14 @@ public class Student {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public StudentDetail getStudentDetail() {
+		return studentDetail;
+	}
+
+	public void setStudentDetail(StudentDetail studentDetail) {
+		this.studentDetail = studentDetail;
 	}
 
 }
