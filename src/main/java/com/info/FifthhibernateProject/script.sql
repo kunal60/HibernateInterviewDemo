@@ -7,6 +7,8 @@ Address_Detail varchar(30) NOT NULL
 
 INSERT INTO StudentAddress values(1,'NewYork');
 
+
+--Student table is having a many to one relationship with StudentAddress table
 create table Student
 (
 Student_id int NOT NULL PRIMARY KEY,
