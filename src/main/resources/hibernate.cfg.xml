@@ -10,27 +10,28 @@
 		<!-- In browser: http://127.0.0.1:8080/apex -->
 		<!-- Uncomment after this -->
 
-		<!-- <property name="connection.driver_class">oracle.jdbc.driver.OracleDriver</property> 
-			<property name="connection.url">jdbc:oracle:thin:@localhost:1521:xe</property> 
-			<property name="connection.username">system</property> <property name="connection.password">admin</property> -->
+		<property name="connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+	<property name="connection.url">jdbc:oracle:thin:@localhost:1521:xe</property>
+	<property name="connection.username">system</property>
+	<property name="connection.password">admin</property>
 
 		<!-- Company SQL server Configuartions -->
 		<!-- Database connection settings -->
 		<!-- This config is for MS sql server 2008. I have put the jar jtds-1.3.1.jar 
 			in class path -->
-		<property name="connection.driver_class">net.sourceforge.jtds.jdbc.Driver</property>
+		<!-- <property name="connection.driver_class">net.sourceforge.jtds.jdbc.Driver</property>
 		<property name="connection.url">jdbc:jtds:sqlserver://172.18.84.176/APMT_GTI</property>
 		<property name="connection.username">apmtgti</property>
-		<property name="connection.password">apmtgti</property>
+		<property name="connection.password">apmtgti</property> -->
 
 
 		<!-- JDBC connection pool (use the built-in) -->
 		<property name="connection.pool_size">2</property>
 
 		<!-- Oracle 10g dialect -->
-		<!-- <property name="dialect">org.hibernate.dialect.Oracle10gDialect</property> -->
+		<property name="dialect">org.hibernate.dialect.Oracle10gDialect</property>
 		<!-- SQL Server dialect -->
-		<property name="dialect">org.hibernate.dialect.SQLServerDialect</property>
+	<!-- 	<property name="dialect">org.hibernate.dialect.SQLServerDialect</property> -->
 
 		<!-- Disable the second-level cache -->
 		<property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
@@ -53,6 +54,8 @@
 		<mapping class="com.info.FourthHibernateProject.StudentDetail" />
 		<mapping class="com.info.FifthhibernateProject.Student" />
 		<mapping class="com.info.FifthhibernateProject.StudentAddress" />
+		
+		<mapping class="com.info.InterviewQuestions.Student_Info" />
 
 
 
