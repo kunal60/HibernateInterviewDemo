@@ -1,4 +1,5 @@
-This package focuses on Dirty Checking in Hibernate
+Q1) ->This package focuses on Dirty Checking in Hibernate
+->Classes Used : Main.java and Student_Info.java
 
 In Main.java
 
@@ -16,5 +17,14 @@ only select query will be triggered and not the Update Query.
 
 
 Reference: http://learningviacode.blogspot.in/2012/02/automatic-dirty-checking.html
+
+
+Q2) This class focuses on Difference between save and persist method
+Class -> MainSavePersistDemo.java
+
+Reference : https://www.youtube.com/watch?v=d6rgXfBYxG8
+
+
+
 
 	

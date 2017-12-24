@@ -54,8 +54,10 @@
 		<mapping class="com.info.FourthHibernateProject.StudentDetail" />
 		<mapping class="com.info.FifthhibernateProject.Student" />
 		<mapping class="com.info.FifthhibernateProject.StudentAddress" />
-		
-		<mapping class="com.info.InterviewQuestions.Student_Info" />
+		<mapping class="com.info.InterviewQuestions1.Student_Info" />
+		<mapping class="com.info.TablePerClass.Employee" />
+		<mapping class="com.info.TablePerClass.Contract_Employee"/>
+		<mapping class="com.info.TablePerClass.Regular_Employee"/>
 
 
 
