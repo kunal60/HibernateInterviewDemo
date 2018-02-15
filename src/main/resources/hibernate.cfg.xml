@@ -60,6 +60,7 @@
 		<mapping class="com.info.TablePerClass.Contract_Employee"/>
 		<mapping class="com.info.TablePerClass.Regular_Employee"/>
 		<mapping class="com.info.hqlDemo.Books"/>
+		<mapping class="com.info.hqlDemo.Persons"/>
 
 
 
